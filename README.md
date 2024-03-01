@@ -1,7 +1,7 @@
 # The Making and Breaking of Camouflage
 
-<img src="asset/motivation.png" width="600">
-<img src="asset/scores.png" width="600">
+<img src="asset/motivation.png" width="800">
+<img src="asset/scores.png" width="800">
 
 ### Dataset Preparation Steps
 * 1- Crop the images around the camouflaged animal so that only its immediate surrounding area is taken into account: 
