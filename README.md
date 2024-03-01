@@ -1,5 +1,7 @@
 # The Making and Breaking of Camouflage
 
+<img src="asset/motivation.png" width="600">
+<img src="asset/aspects.png" width="600">
 
 ### Dataset Preparation Steps
 * 1- Crop the images around the camouflaged animal so that only its immediate surrounding area is taken into account: 
@@ -10,6 +12,7 @@ For a still image dataset:
 ```
 python utils/crop.py --data_dir ../datasets/CHAMELEON --out_data_dir ../datasets/CHAMELEON_crop --type still
 ```
+
 For a video dataset:
 ```
 python utils/crop.py --data_dir ../datasets/MoCA_Video/TrainDataset_per_sq/ --out_data_dir ../datasets/Moca_Video_Train_crop --type video
