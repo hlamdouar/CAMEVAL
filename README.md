@@ -1,6 +1,6 @@
 # The Making and Breaking of Camouflage
 
-<img src="asset/scores_all.png" width="600">
+<img src="asset/scores_all.png" width="800">
 
 ### Dataset Preparation Steps
 <ol>
