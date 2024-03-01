@@ -2,7 +2,7 @@
 
 <img src="asset/motivation.png" width="800">
 <img src="asset/scores.png" width="800">
-<img src="asset/examples.png" width="600">
+<img src="asset/examples.png" width="400" class="center">
 
 ### Dataset Preparation Steps
 * 1- Crop the images around the camouflaged animal so that only its immediate surrounding area is taken into account: 
