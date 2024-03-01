@@ -1,12 +1,10 @@
 # The Making and Breaking of Camouflage
 
-<img src="asset/examples.png" width="800">
+<img src="asset/scores_all.png" width="600">
 
 ### Dataset Preparation Steps
 <ol>
 <li>Crop the images around the camouflaged animal so that only its immediate surrounding area is taken into account: 
-
-Examples:
 
 For a still image dataset:
 ```
