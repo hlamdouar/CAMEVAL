@@ -21,9 +21,11 @@ python utils/crop.py --data_dir ../datasets/MoCA_Video/TrainDataset_per_sq/ --ou
 <li> To compute the boundary score and the combined score, generate global contours (for the cropped images) and ground truth contours (for the object of interest, using the mask) with an off-the-shelf contour detection method, e.g. [DexiNed](https://github.com/xavysp/DexiNed).</li> 
 
 <li> Compute camouflage scores</li>
+
 ```
 python eval.py --data_dir ../CHAMELEON_crop/ --type still --contour_path ../DexiNed/result/BIPED2CHAM/fused/ --contour_gt_path ../DexiNed/result/BIPED2CHAM-GT/fused/
 ```
+
 </ol>
 
 Probabilistic scoring functions and more implementation will be added soon.
