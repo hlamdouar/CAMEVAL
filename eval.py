@@ -29,11 +29,8 @@ def compute_scores(im_dir,mask_dir,contour_path,contour_gt_path,im_ext,mask_ext,
             im_c = np.array(Image.open(os.path.join(contour_path,mask_name)))/255
             im_c_gt = np.array(Image.open(os.path.join(contour_gt_path,mask_name)))/255
 
-            try:  
-                    Srf, Sb, S_alpha = compute_S_alpha(alpha,img,trimap, im_c, im_c_gt, out_dir,img_name[:-4],return_all=True)
-            except:
-                    score = -1 
-                    inner = -1
+            Srf, Sb, S_alpha = compute_S_alpha(alpha,img,trimap, im_c, im_c_gt, out_dir,img_name[:-4],return_all=True)
+
             df_im = pd.DataFrame(columns=col_names).append({'imname':name,'S_rf':Srf, 'S_b':Sb, 'S_alpha': S_alpha},ignore_index=True)
             df_im.to_csv(f_name, mode='a', header=False, index=False)
 
@@ -67,7 +64,7 @@ if __name__ == '__main__':
 
             compute_scores(**f_args)
     else:
-        
+
         vid_list = os.listdir(args.data_dir)        
         for v in vid_list:
             v_args = {'im_dir':os.path.join(args.data_dir,v,'Imgs'),
